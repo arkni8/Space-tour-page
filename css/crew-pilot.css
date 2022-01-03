@@ -1,0 +1,197 @@
+body {
+  color: white;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*PORTION FOR HEADER*/
+body,
+.nav-bar::before {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  margin-top: 50px;
+  height: 127px;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  height: 127px;
+  width: 65%;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.035);
+  overflow: hidden;
+  margin: 0;
+  color: white;
+  /*for older browser*/
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -30px;
+  filter: blur(20px);
+  z-index: -1
+}
+
+.nav-00, .nav-01, .nav-02, .nav-03 {
+  position: absolute;
+  height: 127px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.nav-count {
+  font-size: 1.22rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.nav-00 {
+  left: 200px;
+}
+
+.nav-01 {
+  left: 400px;
+
+}
+
+.nav-02 {
+  left: 650px;
+  height: 121px;
+  /*highlight the current page*/
+  border-bottom: solid 6px;
+  /*for highlight*/
+  padding-top: 3px;
+  /*solve the off-center issue*/
+}
+
+.nav-03 {
+  left: 850px;
+}
+
+.nav-00:hover, .nav-01:hover, .nav-03:hover {
+  height: 121px;
+  /*hover the current page*/
+  border-bottom: solid 6px;        /*for highlight*/
+  padding-top: 3px;                /*solve the off-center issue*/
+}
+
+.head-rule {
+  position: absolute;
+  width: 27%;
+  top: 62.5px;
+  left: 210px;
+  border-style: solid none none none;
+  margin: 0;
+  border-width: 2px;
+  border-color: white;
+  /*fallback*/
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.symbol {
+  width: 62px;
+  position: absolute;
+  top: calc(63.5px - 31px);
+  left: 75px;
+}
+
+/*END OF PORTION FOR HEADER*/
+
+
+.prompt-div {
+  position: relative;
+  left: 210px;
+  top: 60px;
+  width: 400px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.575rem;
+  letter-spacing: 5px;
+}
+
+.prompt {
+  font-size: 1.575rem;
+  margin-right: 15px;
+  color: white;
+  /*fallback*/
+  color: rgba(155, 155, 155, 0.9);
+  font-weight: 800;
+}
+
+main
+{
+  width: 30%;
+  position: relative;
+  left: 210px;
+  top: 180px;
+}
+
+h2
+{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Bellefair', serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h1
+{
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Bellefair', serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.description
+{
+  /*margin-left: 0;*/
+  font-size: 1.1rem;
+  font-family: 'Overpass', sans-serif;
+  clear: both;
+  position: absolute;
+  font-weight: 200;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.image
+{
+  position: absolute;
+  bottom: 0; right: 250px;
+}
+
+/*            START DOT NAVIGATION:          */
+.dot-navigator{position: absolute; display: flex; align-items: center; left: 210px; top: 850px;}
+.pilot{position: relative; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: white; opacity: 1; margin-right: 1.8rem;}
+.commander{position: relative; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: white; opacity: 0.4; margin-right: 1.8rem;}
+.specialist{position: relative; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: white; opacity: 0.4; margin-right: 1.8rem;}
+.engineer{position: relative; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: white; opacity: 0.4; margin-right: 1.8rem;}
+
+.clickme
+{position: absolute; top: 0; left:0; width: 100%; height: 100%; z-index: 5;}
+/*            END DOT NAVIGATION:          */

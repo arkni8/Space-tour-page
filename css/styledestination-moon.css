@@ -1,0 +1,289 @@
+body {
+  color: white;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*PORTION FOR HEADER*/
+body,
+.nav-bar::before {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  margin-top: 50px;
+  height: 127px;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  height: 127px;
+  width: 65%;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.035);
+  overflow: hidden;
+  margin: 0;
+  color: white;
+  /*for older browser*/
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -30px;
+  filter: blur(20px);
+  z-index: -1
+}
+
+.nav-00, .nav-01, .nav-02, .nav-03 {
+  position: absolute;
+  height: 127px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.nav-count {
+  font-size: 1.22rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.nav-00 {
+  left: 200px;
+}
+
+.nav-01 {
+  left: 400px;
+  height: 121px;
+  /*highlight the current page*/
+  border-bottom: solid 6px;
+  /*for highlight*/
+  padding-top: 3px;
+  /*solve the off-center issue*/
+}
+
+.nav-02 {
+  left: 650px;
+}
+
+.nav-03 {
+  left: 850px;
+}
+
+.nav-00:hover, .nav-02:hover, .nav-03:hover {
+  height: 121px;
+  /*hover the current page*/
+  border-bottom: solid 6px;        /*for highlight*/
+  padding-top: 3px;                /*solve the off-center issue*/
+}
+
+.head-rule {
+  position: absolute;
+  width: 27%;
+  top: 62.5px;
+  left: 210px;
+  border-style: solid none none none;
+  margin: 0;
+  border-width: 2px;
+  border-color: white;
+  /*fallback*/
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.symbol {
+  width: 62px;
+  position: absolute;
+  top: calc(63.5px - 31px);
+  left: 75px;
+}
+
+/*END OF PORTION FOR HEADER*/
+
+.prompt-div {
+  position: relative;
+  left: 210px;
+  top: 60px;
+  width: 400px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.575rem;
+  letter-spacing: 5px;
+}
+
+.prompt {
+  font-size: 1.575rem;
+  margin-right: 15px;
+  color: white;
+  /*fallback*/
+  color: rgba(155, 155, 155, 0.9);
+  font-weight: 800;
+}
+
+.main {
+  /*background-color: grey;     for testing
+  color: black;*/
+  /*width: 35%;*/
+  position: absolute;
+  left: 55%;
+  top: 380px;
+  right: 200px;
+  bottom: 300px;
+  margin: 0;
+}
+
+.sub-nav-bar {
+  /*background: white;*/          /*for testing*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 42px;
+}
+
+.sub-nav {
+  position: absolute;
+  display: flex;
+  height: 42px;
+  margin: 0;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;                      /*fallback*/
+  color: rgba(255, 255, 255, 0.7);
+  width: fit-content;
+}
+/*
+.select {
+  display: none;
+}
+*/
+.sub-nav-00 {
+  left: 0;
+  height: 39px;
+  border-bottom: solid 3px;
+  padding-top: 1.5px;
+}
+
+.sub-nav-01 {
+  left: 80px;
+}
+
+.sub-nav-02 {
+  left: 150px;
+}
+
+.sub-nav-03 {
+  left: 240px;
+}
+
+.sub-nav-01:hover, .sub-nav-02:hover, .sub-nav-03:hover {
+  height: 39px;
+  border-bottom: solid 3px;
+  padding-top: 1.5px;
+}
+
+
+/*
+.image {
+  position: fixed;
+  top: 420px;
+  left: 280px;
+  visibility: hidden;
+}
+
+.destiny:hover
+{
+  display: inherit;
+  align-items: center;
+  height: 39px;
+  border-bottom: solid 3px;
+  padding-top: 2px;
+}
+.sub-nav [type=radio]:checked ~ label
+{
+  display: inherit;
+  align-items: center;
+  height: 39px;
+  border-bottom: solid 3px;
+  padding-top: 2px;
+}
+
+.sub-nav [type=radio]:checked ~ label ~ .image
+{
+  visibility: visible;
+}
+*/
+
+
+h1 {
+  clear: both;
+  position: relative;
+  top: 80px;
+  left: -10px;
+  font-family: 'Bellefair', serif;
+  font-weight: lighter;
+  font-size: 120px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 4px;
+}
+
+.description {
+  clear: both;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 200;
+  top: 110px;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.main-rule {
+  position: relative;
+  top: 150px;
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-style: solid;
+}
+
+table {
+  position: relative;
+  line-height: 1.8;
+  top: 160px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.info {
+  font-family: 'Bellefair', serif;
+  font-size: 2rem;
+  padding-right: 45px;
+}
+
+.image
+{
+  position: absolute;
+  top: 40px;
+  left: -780px;
+}
